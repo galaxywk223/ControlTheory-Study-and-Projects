@@ -32,7 +32,6 @@
 │  └─ figures/
 └─ scripts/
    ├─ matlab/
-   │  ├─ legacy/
    │  └─ zie_pipeline/
    └─ python/
 ```

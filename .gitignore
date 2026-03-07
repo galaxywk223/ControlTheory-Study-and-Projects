@@ -42,8 +42,4 @@ venv/
 # Keep curated figures and small datasets tracked; ignore only large experiment artifacts via patterns above and folders below.
 
 # Project-specific runs/logs
-Cart-Pole System/Lab3/rl_logs/
-Cart-Pole System/Lab3/ppo_pendulum_tensorboard/
-Cart-Pole System/Lab3/runs_v2/
-Cart-Pole System/Lab3/runs_v3/
-Cart-Pole System/runs/
+02_倒立摆控制研究/runs/

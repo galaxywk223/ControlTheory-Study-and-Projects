@@ -262,7 +262,7 @@ $$
 
 ![同步误差状态与误差范数](figures/06_chaotic_sync/synchronization_error.png)
 
-按脚本计算，
+由数值结果可见，
 
 $$
 \|e(t)\|_2 \le 10^{-2}
@@ -280,23 +280,19 @@ $$
 
 ### 输入图像与通道分解
 
-图像加密部分使用仓库内的输入图像
-
-$$
-\texttt{figures/06\_chaotic\_sync/plaintext\_input\_image.jpg}.
-$$
+图像加密部分选取一幅 $640\times640$ 的 RGB 图像作为明文图像。
 
 原图及其 RGB 通道如下：
 
 ![原图与 RGB 通道](figures/06_chaotic_sync/plaintext_rgb_channels.png)
 
-同步轨迹在 $t=12\,\mathrm{s}$、$16\,\mathrm{s}$、$20\,\mathrm{s}$ 的状态值用于构造三个种子，脚本实际得到
+同步轨迹在 $t=12\,\mathrm{s}$、$16\,\mathrm{s}$、$20\,\mathrm{s}$ 的状态值用于构造三个种子，可得
 
 $$
 s_1 \approx 0.6332,\qquad s_2 \approx 0.1481,\qquad s_3 \approx 0.3670.
 $$
 
-接着使用这组三个种子生成行置乱序列、列置乱序列以及逐像素扩散密钥流。
+接着用这组三个种子生成行置乱序列、列置乱序列以及逐像素扩散密钥流。
 
 ### 加密与解密结果
 
@@ -304,7 +300,7 @@ $$
 
 ![原图、加密图与解密图](figures/06_chaotic_sync/encryption_pipeline.png)
 
-密文图像已经不再保留可辨识的视觉结构，而解密图像与原图逐像素一致，脚本校验结果为精确恢复。
+密文图像已经不再保留可辨识的视觉结构，而解密图像与原图逐像素一致。
 
 ### 通道直方图
 

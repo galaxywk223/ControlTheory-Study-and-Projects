@@ -451,7 +451,7 @@ $$
 
 ![不同时滞下的神经网络状态轨迹](figures/05_delay_neural_network_stability/state_trajectories_by_delay.png)
 
-三种时滞下的轨迹都收敛到原点附近。按脚本计算，收敛到
+三种时滞下的轨迹都收敛到原点附近。收敛到
 
 $$
 \|x(t)\|_2 \le 10^{-2}

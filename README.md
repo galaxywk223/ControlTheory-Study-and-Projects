@@ -29,11 +29,17 @@
 当前已补充：
 
 - `scripts/01_lti_stability/`：线性时不变系统稳定性笔记的 MATLAB/Python 脚本
+- `scripts/02_lti_control/`：线性时不变系统控制笔记的 MATLAB/Python 脚本
+- `scripts/03_periodic_sampling_control/`：周期采样控制笔记的 MATLAB/Python 脚本
 
 对应输出：
 
 - 图像写入 `figures/01_lti_stability/`
 - 数值结果写入 `generated/01_lti_stability/`
+- 图像写入 `figures/02_lti_control/`
+- 数值结果写入 `generated/02_lti_control/`
+- 图像写入 `figures/03_periodic_sampling/`
+- 数值结果写入 `generated/03_periodic_sampling/`
 
 运行示例：
 
@@ -45,13 +51,37 @@ python scripts/01_lti_stability/reproduce.py
 matlab -batch "cd('D:/Code/Lab/ControlTheory-Study-and-Projects'); run('scripts/01_lti_stability/reproduce.m');"
 ```
 
+```powershell
+python scripts/02_lti_control/reproduce.py
+```
+
+```powershell
+matlab -batch "cd('D:/Code/Lab/ControlTheory-Study-and-Projects'); run('scripts/02_lti_control/reproduce.m');"
+```
+
+```powershell
+python scripts/03_periodic_sampling_control/reproduce.py
+```
+
+```powershell
+matlab -batch "cd('D:/Code/Lab/ControlTheory-Study-and-Projects'); run('scripts/03_periodic_sampling_control/reproduce.m');"
+```
+
 ## Current Layout
 
 ```text
 ModernControlTheory/
 ├─ figures/
 ├─ scripts/
-│  └─ 01_lti_stability/
+│  ├─ 01_lti_stability/
+│  │  ├─ README.md
+│  │  ├─ reproduce.m
+│  │  └─ reproduce.py
+│  ├─ 02_lti_control/
+│  │  ├─ README.md
+│  │  ├─ reproduce.m
+│  │  └─ reproduce.py
+│  └─ 03_periodic_sampling_control/
 │     ├─ README.md
 │     ├─ reproduce.m
 │     └─ reproduce.py

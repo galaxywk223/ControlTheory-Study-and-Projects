@@ -4,9 +4,9 @@
 
 考虑如下时滞神经网络
 
-```math
+$$
 \dot {x} (t) = A x (t) + W f (x (t - \tau)).
-```
+$$
 
 其中：
 
@@ -22,35 +22,35 @@
 
 Lipschitz 条件：存在 $\alpha_i > 0$，$i=1,\dots,n$，使得
 
-```math
+$$
 \left| f _ {i} (a) - f _ {i} (b) \right|
 \leq
 \alpha_ {i} | a - b |,
 \qquad
 \forall a, b \in \mathbb {R}, \ a \neq b.
-```
+$$
 
 并且
 
-```math
+$$
 f_i(0)=0.
-```
+$$
 
 ### 假设 2
 
 单调有界斜率条件：存在 $\alpha_i > 0$，使得
 
-```math
+$$
 0 \leq \frac {f _ {i} (a) - f _ {i} (b)}{a - b} \leq \alpha_ {i},
 \qquad
 \forall a, b \in \mathbb {R}, \ a \neq b.
-```
+$$
 
 并且
 
-```math
+$$
 f_i(0)=0.
-```
+$$
 
 ### 说明
 
@@ -62,14 +62,14 @@ f_i(0)=0.
 
 设假设 1 成立。若存在矩阵 $P > 0$ 和对角矩阵 $Q > 0$，使得
 
-```math
+$$
 \left[
 \begin{array}{c c}
 H e (P A) + Q & P W \\
 * & - L ^ {- 1} Q L ^ {- 1}
 \end{array}
 \right] < 0,
-```
+$$
 
 则该时滞神经网络系统渐近稳定。
 
@@ -78,44 +78,44 @@ H e (P A) + Q & P W \\
 
 构造 Lyapunov 泛函
 
-```math
+$$
 V (t) = x ^ {T} (t) P x (t) + \int_ {t - \tau} ^ {t} x ^ {T} (s) Q x (s) d s.
-```
+$$
 
 对其求导得
 
-```math
+$$
 \dot {V} (t)
 =
 x ^ {T} (t) (A ^ {T} P + P A + Q)
 + f ^ {T} (x (t - \tau)) W ^ {T} P x (t)
 + x ^ {T} (t) P W f(x(t-\tau)).
-```
+$$
 
 由假设 1 可得
 
-```math
+$$
 f _ {i} ^ {2} \left(x _ {i}\right) \leq \alpha_ {i} ^ {2} | x _ {i} | ^ {2}.
-```
+$$
 
 令
 
-```math
+$$
 L = \mathrm{diag}\bigl(\alpha_1,\alpha_2,\ldots,\alpha_n\bigr).
-```
+$$
 
 则有
 
-```math
+$$
 f ^ {T} (x (t - \tau)) L ^ {- 1} Q L ^ {- 1} f (x (t - \tau))
 \leq
 x ^ {T} (t - \tau) Q x (t - \tau).
 \tag{2}
-```
+$$
 
 将导数估计与式 (2) 联立可得
 
-```math
+$$
 \dot {V} (t)
 \leq
 \left[
@@ -136,13 +136,13 @@ x (t) \\
 f (x (t - \tau))
 \end{array}
 \right].
-```
+$$
 
 因此，在矩阵不等式条件下，
 
-```math
+$$
 \dot {V} (t) < 0,
-```
+$$
 
 从而可证明系统渐近稳定。
 
@@ -150,14 +150,14 @@ f (x (t - \tau))
 
 设假设 1 成立。若存在矩阵 $P > 0$ 和对角矩阵 $Q > 0$，使得
 
-```math
+$$
 \left[
 \begin{array}{c c}
 H e (P A) + L Q L & P W \\
 * & - Q
 \end{array}
 \right] < 0,
-```
+$$
 
 则系统渐近稳定。
 
@@ -166,40 +166,40 @@ H e (P A) + L Q L & P W \\
 
 构造 Lyapunov 泛函
 
-```math
+$$
 V (t) = x ^ {T} (t) P x (t) + \int_ {t - \tau} ^ {t} f ^ {T} (x (s)) Q f (x (s)) d s.
-```
+$$
 
 求导可得
 
-```math
+$$
 \dot {V} (t)
 =
 x ^ {T} (t) \left(A ^ {T} P + P A\right) x (t)
 + 2 x ^ {T} (t) P W f (x (t - \tau))
 + f ^ {T} (x (t)) Q f (x (t)).
-```
+$$
 
 由假设 1，
 
-```math
+$$
 \sum_ {i = 1} ^ {n} q _ {i} f _ {i} ^ {2} \left(x _ {i}\right)
 \leq
 \sum_ {i = 1} ^ {n} q _ {i} \alpha_ {i} ^ {2} | x _ {i} | ^ {2}.
-```
+$$
 
 因此，
 
-```math
+$$
 f ^ {T} (x (t)) Q f (x (t))
 \leq
 x ^ {T} (t) L Q L x (t).
 \tag{4}
-```
+$$
 
 将导数估计与式 (4) 联立，可得
 
-```math
+$$
 \dot {V} (t)
 \leq
 \left[
@@ -220,7 +220,7 @@ x (t) \\
 f (x (t - \tau))
 \end{array}
 \right].
-```
+$$
 
 从而系统渐近稳定。
 
@@ -228,7 +228,7 @@ f (x (t - \tau))
 
 设假设 2 成立。若存在 $P > 0$、$Q > 0$、$L > 0$ 以及对角矩阵 $R > 0$、$U > 0$，使得
 
-```math
+$$
 \left[
 \begin{array}{c c c}
 H e (P A) & R A + U L & P W \\
@@ -236,7 +236,7 @@ H e (P A) & R A + U L & P W \\
 * & * & - Q
 \end{array}
 \right] < 0,
-```
+$$
 
 则系统渐近稳定。
 
@@ -245,17 +245,17 @@ H e (P A) & R A + U L & P W \\
 
 构造 Lyapunov 泛函
 
-```math
+$$
 V (t)
 =
 x ^ {T} (t) P x (t)
 + \int_ {t - \tau} ^ {t} f ^ {T} (x (s)) Q f (x (s)) d s
 + 2 \sum_ {i = 1} ^ {n} r _ {i} \int_ {0} ^ {x _ {i} (t)} f _ {i} (s) d s.
-```
+$$
 
 则有
 
-```math
+$$
 \dot {V} (t)
 =
 \left[
@@ -279,42 +279,42 @@ f (x (t)) \\
 f (x (t - \tau))
 \end{array}
 \right].
-```
+$$
 
 由假设 2，
 
-```math
+$$
 0 \leq \frac {f _ {i} \left(x _ {i}\right)}{x _ {i}} \leq \alpha_ {i},
-```
+$$
 
 可进一步得到
 
-```math
+$$
 f _ {i} ^ {2} \left(x _ {i}\right) \leq \alpha_ {i} x _ {i} f _ {i} \left(x _ {i}\right).
-```
+$$
 
 对 $u_i > 0$，
 
-```math
+$$
 \sum u _ {i} f ^ {2} \left(x _ {i}\right)
 \leq
 \sum u _ {i} \alpha_ {i} x _ {i} f \left(x _ {i}\right),
-```
+$$
 
 即
 
-```math
+$$
 f ^ {T} (x (t)) U f (x (t))
 \leq
 f ^ {T} (x (t)) U L x (t).
-```
+$$
 
 因此，
 
-```math
+$$
 2 \left(f ^ {T} (x (t)) U L x (t) - f ^ {T} (x (t)) U f (x (t))\right) \geq 0.
 \tag{6}
-```
+$$
 
 将导数估计与式 (6) 联立，即可得到定理 3 中的充分条件矩阵不等式，从而证明系统渐近稳定。
 

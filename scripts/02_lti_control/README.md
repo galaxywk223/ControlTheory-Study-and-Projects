@@ -1,6 +1,6 @@
-# 02 LTI Control Scripts
+# 02 线性时不变系统控制脚本
 
-本目录用于复现 [`02_lti_control.md`](../../02_lti_control.md) 中的数值结果。
+本目录用于复现 [线性时不变系统控制笔记](../../02_lti_control.md) 中的数值结果。
 
 ## 内容
 

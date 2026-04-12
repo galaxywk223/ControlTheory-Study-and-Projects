@@ -1,6 +1,6 @@
-# 04 Robust Control Scripts
+# 04 鲁棒控制脚本
 
-本目录用于复现 [`04_robust_control.md`](../../04_robust_control.md) 中的区间不确定鲁棒控制数值结果。
+本目录用于复现 [鲁棒控制笔记](../../04_robust_control.md) 中的区间不确定鲁棒控制数值结果。
 
 ## 内容
 
@@ -70,5 +70,5 @@ matlab -batch "cd('D:/Code/Lab/ControlTheory-Study-and-Projects'); run('scripts/
 ## 说明
 
 - 脚本会扫描整个不确定区间上的闭环谱横坐标。
-- 顶点处同时给出公共 Lyapunov 残差与频域增益估计。
+- 顶点处同时给出公共李雅普诺夫残差与频域增益估计。
 - 图像文件使用语义化文件名，便于直接在仓库中引用。

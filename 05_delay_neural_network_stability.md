@@ -1,4 +1,4 @@
-# 非线性系统：时滞神经网络稳定性笔记
+# 非线性时滞神经网络稳定性笔记
 
 ## 非线性系统模型
 
@@ -75,7 +75,7 @@ H e (P A) + Q & P W \\
 
 #### 证明思路
 
-构造 Lyapunov 泛函
+构造李雅普诺夫泛函
 
 ```math
 V (t) = x ^ {T} (t) P x (t) + \int_ {t - \tau} ^ {t} x ^ {T} (s) Q x (s) d s.
@@ -161,7 +161,7 @@ H e (P A) + L Q L & P W \\
 
 #### 证明思路
 
-构造 Lyapunov 泛函
+构造李雅普诺夫泛函
 
 ```math
 V (t) = x ^ {T} (t) P x (t) + \int_ {t - \tau} ^ {t} f ^ {T} (x (s)) Q f (x (s)) d s.
@@ -238,7 +238,7 @@ H e (P A) & R A + U L & P W \\
 
 #### 证明思路
 
-构造 Lyapunov 泛函
+构造李雅普诺夫泛函
 
 ```math
 V (t)

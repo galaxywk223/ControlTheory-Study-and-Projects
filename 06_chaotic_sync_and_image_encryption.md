@@ -121,7 +121,7 @@ K = P^{-1}M
 
 ### 证明思路
 
-构造 Lyapunov 泛函
+构造李雅普诺夫泛函
 
 ```math
 V (e (t)) = e ^ {T} (t) P e (t) + \int_ {t - \tau} ^ {t} e ^ {T} (s) Q e (s) d s.

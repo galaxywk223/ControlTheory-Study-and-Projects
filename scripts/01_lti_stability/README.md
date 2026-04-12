@@ -1,6 +1,6 @@
-# 01 LTI Stability Scripts
+# 01 线性时不变系统稳定性脚本
 
-本目录用于复现 [`01_lti_stability.md`](../../01_lti_stability.md) 中的数值结果。
+本目录用于复现 [线性时不变系统稳定性笔记](../../01_lti_stability.md) 中的数值结果。
 
 ## 内容
 

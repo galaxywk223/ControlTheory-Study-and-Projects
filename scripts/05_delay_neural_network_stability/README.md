@@ -1,6 +1,6 @@
-# 05 Delay Neural Network Stability Scripts
+# 05 非线性时滞神经网络稳定性脚本
 
-本目录用于复现 [`05_delay_neural_network_stability.md`](../../05_delay_neural_network_stability.md) 中的时滞神经网络稳定性数值结果。
+本目录用于复现 [非线性时滞神经网络稳定性笔记](../../05_delay_neural_network_stability.md) 中的时滞神经网络稳定性数值结果。
 
 ## 内容
 
@@ -63,5 +63,5 @@ matlab -batch "cd('D:/Code/Lab/ControlTheory-Study-and-Projects'); run('scripts/
 ## 说明
 
 - 脚本分别计算定理 1、定理 2、定理 3 的矩阵判定裕度。
-- 时域仿真采用固定步长显式 Euler 离散化，便于 MATLAB 与 Python 对齐。
+- 时域仿真采用固定步长显式欧拉离散化，便于 MATLAB 与 Python 对齐。
 - 图像文件使用语义化文件名，便于直接在仓库中引用。

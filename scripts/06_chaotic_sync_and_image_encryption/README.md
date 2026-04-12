@@ -1,6 +1,6 @@
-# 06 Chaotic Sync And Image Encryption Scripts
+# 06 混沌时滞神经网络同步与图像加密脚本
 
-本目录用于复现 [`06_chaotic_sync_and_image_encryption.md`](../../06_chaotic_sync_and_image_encryption.md) 中的同步与图像加密数值结果。
+本目录用于复现 [混沌时滞神经网络同步与图像加密笔记](../../06_chaotic_sync_and_image_encryption.md) 中的同步与图像加密数值结果。
 
 ## 内容
 
@@ -70,6 +70,6 @@ matlab -batch "cd('D:/Code/Lab/ControlTheory-Study-and-Projects'); run('scripts/
 
 ## 说明
 
-- 同步仿真采用固定步长显式 Euler 离散化。
+- 同步仿真采用固定步长显式欧拉离散化。
 - 图像加密先做行列置乱，再做逐像素扩散，解密会检查是否精确恢复原图。
 - 图像文件使用语义化文件名，便于直接在仓库中引用。

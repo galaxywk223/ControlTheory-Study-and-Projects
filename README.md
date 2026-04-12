@@ -1,28 +1,28 @@
-# ModernControlTheory
+# 现代控制理论学习与实验笔记
 
 本仓库当前公开内容聚焦于控制理论学习笔记，按主题整理了从线性系统基础到鲁棒控制、采样控制以及部分非线性问题的阅读与推导记录。
 
-## Reading Order
+## 阅读顺序
 
 建议按以下顺序阅读：
 
-1. [`01_lti_stability.md`](./01_lti_stability.md)
-2. [`02_lti_control.md`](./02_lti_control.md)
-3. [`03_periodic_sampling_control.md`](./03_periodic_sampling_control.md)
-4. [`04_robust_control.md`](./04_robust_control.md)
-5. [`05_delay_neural_network_stability.md`](./05_delay_neural_network_stability.md)
-6. [`06_chaotic_sync_and_image_encryption.md`](./06_chaotic_sync_and_image_encryption.md)
+1. [线性时不变系统稳定性笔记](./01_lti_stability.md)
+2. [线性时不变系统控制笔记](./02_lti_control.md)
+3. [线性时不变系统周期采样控制与稳定性分析笔记](./03_periodic_sampling_control.md)
+4. [鲁棒控制笔记](./04_robust_control.md)
+5. [非线性时滞神经网络稳定性笔记](./05_delay_neural_network_stability.md)
+6. [混沌时滞神经网络同步与图像加密笔记](./06_chaotic_sync_and_image_encryption.md)
 
-## Public Contents
+## 公开内容
 
 - 线性时不变系统稳定性
 - 线性时不变系统控制
-- 周期采样控制与稳定性分析
+- 线性时不变系统周期采样控制与稳定性分析
 - 鲁棒控制
 - 非线性时滞神经网络稳定性
-- 混沌同步与图像加密
+- 混沌时滞神经网络同步与图像加密
 
-## Reproduction Scripts
+## 复现实验脚本
 
 相关脚本统一放在 `scripts/` 目录下，运行产生的数值结果统一放在 `generated/` 目录下。
 
@@ -30,10 +30,10 @@
 
 - `scripts/01_lti_stability/`：线性时不变系统稳定性笔记的 MATLAB/Python 脚本
 - `scripts/02_lti_control/`：线性时不变系统控制笔记的 MATLAB/Python 脚本
-- `scripts/03_periodic_sampling_control/`：周期采样控制笔记的 MATLAB/Python 脚本
+- `scripts/03_periodic_sampling_control/`：线性时不变系统周期采样控制与稳定性分析笔记的 MATLAB/Python 脚本
 - `scripts/04_robust_control/`：鲁棒控制笔记的 MATLAB/Python 脚本
-- `scripts/05_delay_neural_network_stability/`：时滞神经网络稳定性笔记的 MATLAB/Python 脚本
-- `scripts/06_chaotic_sync_and_image_encryption/`：混沌同步与图像加密笔记的 MATLAB/Python 脚本
+- `scripts/05_delay_neural_network_stability/`：非线性时滞神经网络稳定性笔记的 MATLAB/Python 脚本
+- `scripts/06_chaotic_sync_and_image_encryption/`：混沌时滞神经网络同步与图像加密笔记的 MATLAB/Python 脚本
 
 对应输出：
 
@@ -100,7 +100,7 @@ python scripts/06_chaotic_sync_and_image_encryption/generate_results.py
 matlab -batch "cd('D:/Code/Lab/ControlTheory-Study-and-Projects'); run('scripts/06_chaotic_sync_and_image_encryption/generate_results.m');"
 ```
 
-## Current Layout
+## 当前目录结构
 
 ```text
 ModernControlTheory/
@@ -143,7 +143,7 @@ ModernControlTheory/
 
 ## 开源协议
 
-本仓库中的笔记、图示与文档内容基于 [MIT License](./LICENSE) 开源。
+本仓库中的笔记、图示与文档内容基于 [MIT 许可证](./LICENSE) 开源。
 
 补充说明：
 

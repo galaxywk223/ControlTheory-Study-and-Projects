@@ -2,7 +2,7 @@
 
 ## 线性时不变系统概述
 
-线性时不变系统（Linear Time-Invariant System, LTI）同时满足：
+线性时不变系统（简称 LTI 系统）同时满足：
 
 - 线性；
 - 时不变性；
@@ -57,7 +57,7 @@ c_1x_1(t)+c_2x_2(t)
 
 - 向量空间：满足加法与数乘封闭。
 - 赋范向量空间：在向量空间上定义范数，用来度量向量长度。
-- 完备赋范向量空间：所有柯西序列都在空间内收敛，也称 Banach 空间。
+- 完备赋范向量空间：所有柯西序列都在空间内收敛，也称巴拿赫（Banach）空间。
 
 ## 李雅普诺夫稳定
 
@@ -73,7 +73,7 @@ c_1x_1(t)+c_2x_2(t)
 
 李雅普诺夫稳定的 $\varepsilon$-$\delta$ 邻域关系可表示如下：
 
-![李雅普诺夫稳定的 epsilon-delta 邻域示意](figures/01_lti_stability/lyapunov_stability_epsilon_delta.jpg)
+![李雅普诺夫稳定的 ε-δ 邻域示意图](figures/01_lti_stability/lyapunov_stability_epsilon_delta.jpg)
 
 ### 说明
 

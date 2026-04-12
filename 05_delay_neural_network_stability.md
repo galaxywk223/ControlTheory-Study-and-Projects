@@ -4,9 +4,9 @@
 
 考虑如下时滞神经网络
 
-$$
+```math
 \dot {x} (t) = A x (t) + W f (x (t - \tau)).
-$$
+```
 
 其中：
 
@@ -22,35 +22,35 @@ $$
 
 Lipschitz 条件：存在 $\alpha_i > 0$，$i=1,\dots,n$，使得
 
-$$
+```math
 \left| f _ {i} (a) - f _ {i} (b) \right|
 \leq
 \alpha_ {i} | a - b |,
 \qquad
 \forall a, b \in \mathbb {R}, \ a \neq b.
-$$
+```
 
 并且
 
-$$
+```math
 f_i(0)=0.
-$$
+```
 
 ### 假设 2
 
 单调有界斜率条件：存在 $\alpha_i > 0$，使得
 
-$$
+```math
 0 \leq \frac {f _ {i} (a) - f _ {i} (b)}{a - b} \leq \alpha_ {i},
 \qquad
 \forall a, b \in \mathbb {R}, \ a \neq b.
-$$
+```
 
 并且
 
-$$
+```math
 f_i(0)=0.
-$$
+```
 
 ### 说明
 
@@ -62,14 +62,14 @@ $$
 
 设假设 1 成立。若存在矩阵 $P > 0$ 和对角矩阵 $Q > 0$，使得
 
-$$
+```math
 \left[
 \begin{array}{c c}
 H e (P A) + Q & P W \\
 * & - L ^ {- 1} Q L ^ {- 1}
 \end{array}
 \right] < 0,
-$$
+```
 
 则该时滞神经网络系统渐近稳定。
 
@@ -77,44 +77,44 @@ $$
 
 构造 Lyapunov 泛函
 
-$$
+```math
 V (t) = x ^ {T} (t) P x (t) + \int_ {t - \tau} ^ {t} x ^ {T} (s) Q x (s) d s.
-$$
+```
 
 对其求导得
 
-$$
+```math
 \dot {V} (t)
 =
 x ^ {T} (t) (A ^ {T} P + P A + Q)
 + f ^ {T} (x (t - \tau)) W ^ {T} P x (t)
 + x ^ {T} (t) P W f(x(t-\tau)).
-$$
+```
 
 由假设 1 可得
 
-$$
+```math
 f _ {i} ^ {2} \left(x _ {i}\right) \leq \alpha_ {i} ^ {2} | x _ {i} | ^ {2}.
-$$
+```
 
 令
 
-$$
+```math
 L = \mathrm{diag}\bigl(\alpha_1,\alpha_2,\ldots,\alpha_n\bigr).
-$$
+```
 
 则有
 
-$$
+```math
 f ^ {T} (x (t - \tau)) L ^ {- 1} Q L ^ {- 1} f (x (t - \tau))
 \leq
 x ^ {T} (t - \tau) Q x (t - \tau).
 \tag{2}
-$$
+```
 
 将导数估计与式 (2) 联立可得
 
-$$
+```math
 \dot {V} (t)
 \leq
 \left[
@@ -135,13 +135,13 @@ x (t) \\
 f (x (t - \tau))
 \end{array}
 \right].
-$$
+```
 
 因此，在矩阵不等式条件下，
 
-$$
+```math
 \dot {V} (t) < 0,
-$$
+```
 
 从而可证明系统渐近稳定。
 
@@ -149,14 +149,14 @@ $$
 
 设假设 1 成立。若存在矩阵 $P > 0$ 和对角矩阵 $Q > 0$，使得
 
-$$
+```math
 \left[
 \begin{array}{c c}
 H e (P A) + L Q L & P W \\
 * & - Q
 \end{array}
 \right] < 0,
-$$
+```
 
 则系统渐近稳定。
 
@@ -164,40 +164,40 @@ $$
 
 构造 Lyapunov 泛函
 
-$$
+```math
 V (t) = x ^ {T} (t) P x (t) + \int_ {t - \tau} ^ {t} f ^ {T} (x (s)) Q f (x (s)) d s.
-$$
+```
 
 求导可得
 
-$$
+```math
 \dot {V} (t)
 =
 x ^ {T} (t) \left(A ^ {T} P + P A\right) x (t)
 + 2 x ^ {T} (t) P W f (x (t - \tau))
 + f ^ {T} (x (t)) Q f (x (t)).
-$$
+```
 
 由假设 1，
 
-$$
+```math
 \sum_ {i = 1} ^ {n} q _ {i} f _ {i} ^ {2} \left(x _ {i}\right)
 \leq
 \sum_ {i = 1} ^ {n} q _ {i} \alpha_ {i} ^ {2} | x _ {i} | ^ {2}.
-$$
+```
 
 因此，
 
-$$
+```math
 f ^ {T} (x (t)) Q f (x (t))
 \leq
 x ^ {T} (t) L Q L x (t).
 \tag{4}
-$$
+```
 
 将导数估计与式 (4) 联立，可得
 
-$$
+```math
 \dot {V} (t)
 \leq
 \left[
@@ -218,7 +218,7 @@ x (t) \\
 f (x (t - \tau))
 \end{array}
 \right].
-$$
+```
 
 从而系统渐近稳定。
 
@@ -226,7 +226,7 @@ $$
 
 设假设 2 成立。若存在 $P > 0$、$Q > 0$、$L > 0$ 以及对角矩阵 $R > 0$、$U > 0$，使得
 
-$$
+```math
 \left[
 \begin{array}{c c c}
 H e (P A) & R A + U L & P W \\
@@ -234,7 +234,7 @@ H e (P A) & R A + U L & P W \\
 * & * & - Q
 \end{array}
 \right] < 0,
-$$
+```
 
 则系统渐近稳定。
 
@@ -242,17 +242,17 @@ $$
 
 构造 Lyapunov 泛函
 
-$$
+```math
 V (t)
 =
 x ^ {T} (t) P x (t)
 + \int_ {t - \tau} ^ {t} f ^ {T} (x (s)) Q f (x (s)) d s
 + 2 \sum_ {i = 1} ^ {n} r _ {i} \int_ {0} ^ {x _ {i} (t)} f _ {i} (s) d s.
-$$
+```
 
 则有
 
-$$
+```math
 \dot {V} (t)
 =
 \left[
@@ -276,42 +276,42 @@ f (x (t)) \\
 f (x (t - \tau))
 \end{array}
 \right].
-$$
+```
 
 由假设 2，
 
-$$
+```math
 0 \leq \frac {f _ {i} \left(x _ {i}\right)}{x _ {i}} \leq \alpha_ {i},
-$$
+```
 
 可进一步得到
 
-$$
+```math
 f _ {i} ^ {2} \left(x _ {i}\right) \leq \alpha_ {i} x _ {i} f _ {i} \left(x _ {i}\right).
-$$
+```
 
 对 $u_i > 0$，
 
-$$
+```math
 \sum u _ {i} f ^ {2} \left(x _ {i}\right)
 \leq
 \sum u _ {i} \alpha_ {i} x _ {i} f \left(x _ {i}\right),
-$$
+```
 
 即
 
-$$
+```math
 f ^ {T} (x (t)) U f (x (t))
 \leq
 f ^ {T} (x (t)) U L x (t).
-$$
+```
 
 因此，
 
-$$
+```math
 2 \left(f ^ {T} (x (t)) U L x (t) - f ^ {T} (x (t)) U f (x (t))\right) \geq 0.
 \tag{6}
-$$
+```
 
 将导数估计与式 (6) 联立，即可得到定理 3 中的充分条件矩阵不等式，从而证明系统渐近稳定。
 
@@ -321,15 +321,15 @@ $$
 
 取两神经元时滞网络
 
-$$
+```math
 \dot x(t)=Ax(t)+Wf(x(t-\tau)),
 \qquad
 f(x)=\tanh(x),
-$$
+```
 
 其中
 
-$$
+```math
 A=
 \begin{bmatrix}
 -1.0 & 0 \\
@@ -341,23 +341,23 @@ W=
 0.35 & -0.28 \\
 0.22 & 0.31
 \end{bmatrix}.
-$$
+```
 
 由于
 
-$$
+```math
 0 \le \frac{d}{ds}\tanh(s) \le 1,
-$$
+```
 
 因此这里可取
 
-$$
+```math
 L=I_2.
-$$
+```
 
 历史函数取为常值
 
-$$
+```math
 x(s)=
 \begin{bmatrix}
 1.2 \\
@@ -365,13 +365,13 @@ x(s)=
 \end{bmatrix},
 \qquad
 s \in [-\tau,0].
-$$
+```
 
 ### 三条定理的数值证书
 
 对定理 1，可取
 
-$$
+```math
 P_1=
 \begin{bmatrix}
 1.4722 & 0 \\
@@ -383,11 +383,11 @@ Q_1=
 1.6677 & 0 \\
 0 & 1.7276
 \end{bmatrix}.
-$$
+```
 
 对定理 2，可取
 
-$$
+```math
 P_2=
 \begin{bmatrix}
 0.6477 & 0 \\
@@ -399,11 +399,11 @@ Q_2=
 0.4962 & 0 \\
 0 & 3.0585
 \end{bmatrix}.
-$$
+```
 
 对定理 3，可取
 
-$$
+```math
 P_3=
 \begin{bmatrix}
 2.5015 & 0 \\
@@ -415,9 +415,9 @@ Q_3=
 2.5932 & 0 \\
 0 & 1.4982
 \end{bmatrix},
-$$
+```
 
-$$
+```math
 R=
 \begin{bmatrix}
 1.6932 & 0 \\
@@ -429,7 +429,7 @@ U=
 1.8966 & 0 \\
 0 & 2.2641
 \end{bmatrix}.
-$$
+```
 
 把它们代入三条定理对应的块矩阵后，最大特征值分别为
 
@@ -453,9 +453,9 @@ $$
 
 三种时滞下的轨迹都收敛到原点附近。收敛到
 
-$$
+```math
 \|x(t)\|_2 \le 10^{-2}
-$$
+```
 
 后不再离开的时间分别约为 $8.458\,\mathrm{s}$、$12.056\,\mathrm{s}$、$17.074\,\mathrm{s}$。时滞增大以后，收敛速度明显下降，但并没有破坏稳定性。
 
@@ -463,9 +463,9 @@ $$
 
 进一步在
 
-$$
+```math
 \tau \in [0,2.2]
-$$
+```
 
 上做等步长扫描，可以得到时滞与收敛时间之间的关系：
 

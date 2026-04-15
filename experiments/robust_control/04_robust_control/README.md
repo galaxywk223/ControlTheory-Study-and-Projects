@@ -1,6 +1,6 @@
 # 04 鲁棒控制实验
 
-本目录复现 [`04_鲁棒控制`](../../../notes/04_鲁棒控制.md) 中的区间不确定系统实验，重点观察参数漂移下的闭环稳定性和频域性能估计。
+本目录复现 [`04_鲁棒控制`](../../../notes/04_鲁棒控制.md) 中的区间不确定系统实验，重点为参数漂移下的闭环稳定性与频域性能估计。
 
 ## 关联笔记
 
@@ -22,7 +22,7 @@
 
 ## 运行命令
 
-Python 依赖见 [requirements.txt](../../../requirements.txt)。下面的命令都在仓库根目录执行：
+Python 依赖见 [requirements.txt](../../../requirements.txt)。以下命令在仓库根目录执行。
 
 ```bash
 python experiments/robust_control/04_robust_control/generate_results.py

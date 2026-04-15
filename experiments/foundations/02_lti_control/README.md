@@ -14,7 +14,7 @@
 
 ## 代表结果
 
-闭环响应图可以直接对比控制器引入前后的状态收敛差异。
+闭环响应图用于对比控制器引入前后的状态收敛差异。
 
 <p align="center">
   <img src="../../../figures/02_lti_control/theorem_3_state_feedback_response.png" alt="线性时不变系统状态反馈闭环响应" width="760" />
@@ -22,7 +22,7 @@
 
 ## 运行命令
 
-Python 依赖见 [requirements.txt](../../../requirements.txt)。下面的命令都在仓库根目录执行：
+Python 依赖见 [requirements.txt](../../../requirements.txt)。以下命令在仓库根目录执行。
 
 ```bash
 python experiments/foundations/02_lti_control/generate_results.py

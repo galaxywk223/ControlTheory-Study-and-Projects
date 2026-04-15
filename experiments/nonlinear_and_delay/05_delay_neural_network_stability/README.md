@@ -1,6 +1,6 @@
 # 05 非线性时滞神经网络稳定性实验
 
-本目录复现 [`05_非线性时滞神经网络稳定性`](../../../notes/05_非线性时滞神经网络稳定性.md) 中的稳定性判定与时域仿真结果，重点看时滞对收敛速度的影响。
+本目录复现 [`05_非线性时滞神经网络稳定性`](../../../notes/05_非线性时滞神经网络稳定性.md) 中的稳定性判定与时域仿真结果，重点分析时滞对收敛速度的影响。
 
 ## 关联笔记
 
@@ -14,7 +14,7 @@
 
 ## 代表结果
 
-不同延迟下的状态轨迹能够直观看到时滞增大后系统收敛速度变慢。
+不同延迟下的状态轨迹显示时滞增大后系统收敛速度变慢。
 
 <p align="center">
   <img src="../../../figures/05_delay_neural_network_stability/state_trajectories_by_delay.png" alt="不同时滞下的神经网络状态轨迹" width="920" />
@@ -22,7 +22,7 @@
 
 ## 运行命令
 
-Python 依赖见 [requirements.txt](../../../requirements.txt)。下面的命令都在仓库根目录执行：
+Python 依赖见 [requirements.txt](../../../requirements.txt)。以下命令在仓库根目录执行。
 
 ```bash
 python experiments/nonlinear_and_delay/05_delay_neural_network_stability/generate_results.py

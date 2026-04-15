@@ -22,7 +22,7 @@
 
 ## 运行命令
 
-Python 依赖见 [requirements.txt](../../../requirements.txt)。下面的命令都在仓库根目录执行：
+Python 依赖见 [requirements.txt](../../../requirements.txt)。以下命令在仓库根目录执行。
 
 ```bash
 python experiments/nonlinear_and_delay/06_chaotic_sync_and_image_encryption/generate_results.py

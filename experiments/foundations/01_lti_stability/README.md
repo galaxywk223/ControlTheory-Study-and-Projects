@@ -14,7 +14,7 @@
 
 ## 代表结果
 
-状态轨迹可以直接看到二维系统从不同初值收敛到原点。
+状态轨迹显示二维系统从不同初值收敛到原点。
 
 <p align="center">
   <img src="../../../figures/01_lti_stability/state_trajectories.png" alt="线性时不变系统状态轨迹" width="760" />
@@ -22,7 +22,7 @@
 
 ## 运行命令
 
-Python 依赖见 [requirements.txt](../../../requirements.txt)。下面的命令都在仓库根目录执行：
+Python 依赖见 [requirements.txt](../../../requirements.txt)。以下命令在仓库根目录执行。
 
 ```bash
 python experiments/foundations/01_lti_stability/generate_results.py
